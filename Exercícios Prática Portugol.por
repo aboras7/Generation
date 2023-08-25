@@ -1,7 +1,33 @@
 programa
 {
-	//Não consegui fazer o primeiro exercício, continuarei tentando nesse final de semana até conseguir. Tive ajuda do colega de classe no segundo exercício.
 	
+
+	//exercício 1
+	funcao inicio()
+	{
+		inteiro aboras [10] = {2,5,1,3,4,9,7,8,10,6}
+	para (inteiro i=9; i >=0; i--)
+		para (inteiro j=0; j<i; j++){
+		se(aboras[j] < aboras[j+1]) {
+		inteiro aux = aboras[j]
+		aboras[j] = aboras[j+1]
+		aboras[j+1] = aux
+		}
+	
+		}
+		escreva ("\nVetor Ordenado: ")
+		para (inteiro i = 0; i <10; i++) {
+		se (i == 9) {
+			escreva (aboras[i], ".")
+		}senao
+		escreva (aboras[i] , ",") }
+		}
+		
+
+
+
+	
+	//Exercício 2
 	funcao inicio()
 	{
 		inteiro vetor[10]
@@ -43,7 +69,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 883; 
+ * @POSICAO-CURSOR = 28; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
